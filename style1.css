@@ -1,0 +1,208 @@
+body, *, *:before, *:after {
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+}
+
+html, body {
+    font-family: 'Lato', sans;
+    font-size: 16px;
+    color: #474747;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 1em;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover, a:visited, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.fixed-width {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+@media screen and (width: 736px){
+    * {
+        width: auto;
+    }
+}
+
+/*========================
+  Header
+==========================*/
+.page-header {
+    border-top: 5px solid #ebebeb;
+    padding: 20px 0;
+    }
+
+    .page-header > div{
+        position: relative;
+    }
+
+    .page-header a h1{
+        padding-top: 50px;
+        font-family: "Merriweather";
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .page-header nav {
+        font-family: "Lato";
+        text-transform: uppercase;
+        overflow: hidden;
+    }
+
+    .page-header nav ul{
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .page-header nav li {
+        color: #bfbfbf;
+        font-size: 0.6rem;
+        padding: 0 16px;
+        display: inline-block;
+    }
+
+    .page-header nav li em {
+        display: block;
+        color: #474747;
+        font-size: 2.4em;
+    }
+
+@media screen and (min-width: 736px){
+    .page-header {
+        border-top: 5px solid #ebebeb;
+        padding-bottom: 2em;
+        }
+    
+        .page-header > div {
+            position: relative;
+        }
+    
+        .page-header .identity {
+            font-family: "Merriweather";
+            font-size: 2.5em;
+            position: absolute;
+            bottom: 0;
+        }
+    
+        .page-header nav {
+            float: right;
+            font-family: "Lato";
+            text-transform: uppercase;
+        }
+    
+        .page-header nav li {
+            color: #bfbfbf;
+            font-size: 0.6rem;
+            float: left;
+            margin-right: 3rem;
+            padding-top: 3rem;
+        }
+    
+        .page-header nav li:last-child {
+            margin-right: 0;
+        }
+    
+        .page-header nav li em {
+            display: block;
+            color: #474747;
+            font-size: 2.4em;
+        }
+    
+}
+
+/*========================
+    Main content
+========================*/
+.image h1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Lato', sans-serif;
+    font-size: 2.8rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    text-align: left;
+    text-shadow: 2px 2px #111;
+}
+
+@media screen and (min-width: 736px){
+
+    .image h1{
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        text-align: left;
+        text-shadow: 2px 2px 8px #111;
+    }
+}
+
+.image{
+    max-width: 940px;
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('paint20.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
+
+    .image h1{
+        position: absolute;
+        top: 60%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+        font-family: 'Lato', sans-serif;
+        font-size: 2.8rem;
+        color: rgb(255, 255, 255);
+        font-weight: 900;
+        text-align: left;
+        text-shadow: 2px 2px 8px #111;
+}
+
+
+    .grid h1{
+        font-size: 1.5rem;
+    }
+
+    .grid img{
+        height: 50px;
+        width: 50px;
+    }

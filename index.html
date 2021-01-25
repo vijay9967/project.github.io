@@ -1,0 +1,75 @@
+<html>
+<head>
+<title> web form </title>
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+<SCRIPT type="text/javascript"> 
+	var myWindow; 
+	function openCenteredWindow(url)
+	{ 
+		var width = 400; var height = 300; 
+		var windowFeatures = "width=" + width + ",height=" + height +",status,resizable";
+		myWindow = window.open(url, "subWind", windowFeatures);
+	}
+function closeWindow() 
+		{ 
+			if (window.confirm("Do you want to close the browser?"))
+			window.close(); 
+		}
+	</SCRIPT>
+	
+</head>
+<body ><right>
+<header class="page-header">
+    <div class="fixed-width clearfix">
+        <a href="#"><h1>Express Painting</h1></a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Homepage<em>Home</em></a></li>
+                <li><a href="about.html">Who are we?<em>About</em></a></li>
+                <li><a href="contact.html">What are you think<em>Feadback</em></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+ <div class = "image">
+        <div class="centered">
+            <h1>Suppervised Hassle-free Home Painting Services</h1>
+        </div>
+    </div>
+<form>
+Name:<br>
+<input type="text" name="firstname"><br>
+Select work<br>
+<input id type="checkbox" name="work" value="1">Living Room<br>
+<input type="checkbox" name="work" value = "2" >Kitchen<br>
+<input type="checkbox" name="work" value = "3" >Bedroom<br>
+<input type="checkbox" name="work" value = "3" >Bathroom<br>
+<input type="checkbox" name="work" value = "3" >Outer Structure<br>
+Phone Number:<br>
+<input type="text" name="username"><br>
+Address:<br>
+<input type="text" name="username"><br>
+Date<br>
+<input type="date"><br>
+Favourit Color:<br>
+<select>
+<option value="red">Red</option>
+<option value="Blue">Blue</option>
+<option value="Green">Green</option>
+<option value="yellow">yellow</option>
+<option value="pink">pink</option>
+</select><br>
+Discription:<br>
+<input type="text" name="username"><br><br><br>
+<input type="submit" value="Get Appointment">
+<INPUT type="button" onclick="closeWindow()" value="Close the window">
+</tr>
+</form>
+</table>
+</body>
+</html>
